@@ -31,4 +31,4 @@ Este é um simples formulário de login que fizemos ano passando e estamos melho
 - `login.js`: Arquivo JavaScript para adicionar funcionalidades adicionais ao formulário, se necessário.
   
 ## Autores 📍
-[Liara Silva](https://github.com/LiaraSilva/form-LoginVII)
+[Liara Silva](https://github.com/LiaraSilva?tab=repositories)
