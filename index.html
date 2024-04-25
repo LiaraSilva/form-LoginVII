@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <title>Login</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var email = document.getElementsByName("email")[0].value.trim();
+            var senha = document.getElementsByName("senha")[0].value.trim();
+            var emailError = document.getElementById("email-error");
+            var senhaError = document.getElementById("senha-error");
+            var isValid = true;
+
+            if (email === "") {
+                emailError.style.display = "block";
+                isValid = false;
+            } else {
+                emailError.style.display = "none";
+            }
+
+            if (senha === "") {
+                senhaError.style.display = "block";
+                isValid = false;
+            } else {
+                senhaError.style.display = "none";
+            }
+
+            return isValid;
+        }
+    </script>
+</head>
+<body>
+ <div class="main-login">
+    <div class="left-login">
+        <h1 class="marimari">
+            <img src="apps.png" class="estudantes" alt="estudantes">
+        </h1>
+    </div>
+    <div class="right-login">
+         <div class="card-login">
+            <div class="textfield">
+                <input type="email" id="email" name="email" placeholder="Número de Telefone/Nome de Usuário/Email">
+                <span id="email-error" class="error-message" style="display: none;">Por favor, preencha este campo.</span>
+            </div>
+            <div class="textfield">
+                <input type="password" id="senha" name="senha" placeholder="Senha">
+                <span id="senha-error" class="error-message" style="display: none;">Por favor, preencha este campo.</span>
+            </div>
+            <div class="box-lembrar-senha">  
+                <a class="link" href="#" style="color: aliceblue;"><a href="senha.html">Esqueci minha Senha </a>
+            </div>
+            <div class="box-btn">
+            <button class="btn-login" type="button" onclick="validateForm()">Entrar</button>
+            <button class="btn-login" style="position: relative; left: 50%; top: -94px;"><a href="cadastro.html" style="color: #83f0f8;">Cadastrar</a></button>
+         </div>
+    </div>          
+ </div>
+ <script src="java.js"></script>
+</body>
+</html>
